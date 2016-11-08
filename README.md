@@ -4,12 +4,13 @@
 The English document will be updated in the near future.
 Please stay tuned.**
 # Introduction
-基于 **react-native** 原生组件 **Picker** 。支持多级联动，如** “省-市-区” **三级联动。
-包内置有 **DateTimePicker**，该组件是 **react-native-dynamic-picker ** 的一个扩展，可用于选择 “年-月-日-时-分-秒”。
+基于 **react-native** 原生组件 **Picker** 。支持多级联动，如 **“省-市-区”** 三级联动。
+包内置有 **DateTimePicker**，该组件是 **react-native-dynamic-picker** 的一个扩展，可用于选择 “年-月-日-时-分-秒”。
 
-注：在该文档下面的内容中，除非特别注明，否则 **Picker** 都指代 **react-native-dynamic-picker **
+注：在该文档下面的内容中，除非特别注明，否则 **Picker** 都指代 **react-native-dynamic-picker**
 
 IOS效果图(IOS Demo Screenshot): [点击查看(click)](https://raw.githubusercontent.com/xiaocaibird/react-native-dynamic-picker/master/readme/img/ios.png "点击查看(click)")
+
 Android效果图(Android Demo Screenshot): [点击查看(click)](https://raw.githubusercontent.com/xiaocaibird/react-native-dynamic-picker/master/readme/img/android1.jpeg "点击查看(click)")  [点击查看(click)](https://raw.githubusercontent.com/xiaocaibird/react-native-dynamic-picker/master/readme/img/android2.jpeg "点击查看(click)")
 
 # Install
