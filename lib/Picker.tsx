@@ -507,7 +507,8 @@ const getStyles = () => {
                     paddingVertical: f.Device.getActualSize(6),
                     textAlign: 'center',
                     fontSize: f.Device.getActualSize(7),
-                    color: 'black'
+                    color: 'black',
+                    backgroundColor: 'transparent'
                 },
                 hide: {
                     zIndex: -10000
