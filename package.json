@@ -1,0 +1,39 @@
+{
+  "name": "react-native-dynamic-picker",
+  "version": "1.0.0",
+  "description": "dynamic picker",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaocaibird/react-native-dynamic-picker.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "picker"
+  ],
+  "author": "CM Zhou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiaocaibird/react-native-dynamic-picker/issues"
+  },
+  "homepage": "https://github.com/xiaocaibird/react-native-dynamic-picker#readme",
+  "peerDependencies": {
+    "react": "^15.3.2",
+    "react-native": "^0.35.0"
+  },
+  "dependencies": {
+    "lodash": "^4.16.6"
+  },
+  "files": [
+    "lib",
+    "tsconfig.json",
+    "index.ts",
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ]
+}

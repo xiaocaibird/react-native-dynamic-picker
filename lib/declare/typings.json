@@ -1,0 +1,7 @@
+{
+  "globalDependencies": {
+    "lodash": "registry:dt/lodash#4.14.0+20161028154038",
+    "react": "registry:dt/react#0.14.0+20161024223416",
+    "react-native": "registry:dt/react-native#0.34.0+20161025145826"
+  }
+}
