@@ -58,59 +58,58 @@ const styles = StyleSheet.create({
 ######  when isDynamic is true
 
 
-            data is a "item List"(like [item,item,item...]) ,the List is first column of Picker ，
+    data is a "item List"(like [item,item,item...]) ,the List‘lable will display on first column of Picker ，
 			
-			the data structure of item :
-            		{
-                        value: string, //value
-                        lable: string,  //display text
-                        children: item[]  //children item
-                        mustGetNewChildrenEveryTime: boolean  //Whether to update child nodes every time when you set "getChildrenFuns" (see Picker Parameters).defaultValue is false                                                           
-            		}
-    		data example：[
-    			{
-    				value:'100',
-    				lable:'China',
-    				children:[
-    								{
-    									value:'110',
-    									lable:'Beijing',
-    									children:[
-    													{
-    														value:'111',
-    														lable:'Chaoyang',
-    														children:undefined 
-    													},
-    													{
-    														value:'112',
-    														lable:'Haidian',
-    														children:undefined 
-    													}
-    												]
-    								},
-    								{
-    									value:'120',
-    									lable:'Shanghai',
-    									children:...
-    								}
-    							]
-    			},
-    			{
-    				value: '200',
-    				lable: 'USA',
-    				children: [
-          				...
-        				]
-      			},
-				...
-    		]
+	the data structure of item :
+        {
+            value: string, //value
+            lable: string,  //display text
+            children: item[]  //children item
+            mustGetNewChildrenEveryTime: boolean //Whether to update children every time when you set "getChildrenFuns" (see Picker Parameters).defaultValue is false                                                           
+    	}
+	
+	data example：
+	[
+    	{
+    		value:'100',
+    		lable:'China',
+    		children:[
+    					{
+    						value:'110',
+    						lable:'Beijing',
+    						children:[
+    									{
+    										value:'111',
+    										lable:'Chaoyang',
+    										children:undefined 
+    									},
+    									{
+    										value:'112',
+    										lable:'Haidian',
+    										children:undefined 
+    									}
+    								]
+    					},
+    					 {
+    						value:'120',
+    						lable:'Shanghai',
+    						children:...
+    					}
+    				]
+    	},
+    	{
+    		value: '200',
+    		lable: 'USA',
+    		children: ...
+      	},
+		...
+    ]
 
 
 ------------
 
 
 ######   when isDynamic is false
-
 
     data is a Two-dimensional array (like [[item,item...],[item,item...],[item,item...],...]),
     one column bind one [item,item...]
@@ -162,9 +161,9 @@ const styles = StyleSheet.create({
     It can be used to pick “year-month-day-hour-minute-second”.
     Set the 'type' to change the mode of DateTimePicker. 
     
-    type can set from one of DateTimePicker.type.
+    type can set from one of 'DateTimePicker.type' 
 
-    values of DateTimePicker.type: 
+    DateTimePicker.type=
      {
         datetime,
         date,
@@ -186,12 +185,12 @@ const styles = StyleSheet.create({
 | data  | data |[item,item,...] or [[item,item...],[item,item...],...] |  The structure of the data depends on isDynamic.Please see **Example**  |
 |  title |  title | string  |   |
 | titleStyle  | style of the **title** |TextStyle  |   |
-|  branchTitles | every column's title  | string List  | lick ['Country', 'City', 'District']  |
+|  branchTitles | every column's title  | string List  | like ['Country', 'City', 'District']  |
 | branchTitleStyle  |  style of **branchTitles** | TextStyle List or TextStyle  |  Incoming **List** to control every branchTitle,or incoming one **TextStyle** to control all branchTitles |
 |branchPickersStyles | style of react-native's Picker | ViewStyle List or ViewStyle | Incoming **List** to control every react-native's Picker,or incoming one **ViewStyle** to control all react-native's Pickers.See details from **react-native document** |
-|branchPickersItemStyles(only IOS) | style of react-native's Picker.Item |TextStyle List or TextStyle| | only IOS|
+|branchPickersItemStyles(only IOS) | style of react-native's **'Picker.Item'** |TextStyle List or TextStyle| | only IOS|
 |  topInfoStyle | style of **top prompt**| TextStyle |   |
-|  topInfoCreateFun |  a function to create **top prompt** |function|  |  when selected item has changed,the funciotn will be called. The funciotn can get a parameter, **selectItems**，it's the all of selected items now.The funciotn must return a string.like：**Now Date:2011-1-1**. |
+|  topInfoCreateFun |  a function to create **top prompt** |function|  when selected item has changed,the funciotn will be called. The funciotn can get a parameter, **selectItems**，it's the all of selected items now.The funciotn must return a string.like：**Now Date:2011-1-1**. |
 | buttonStyle | style of bottom's button | TextStyle | |
 | okButtonText | text of okButton |string| default:'确定' |
 |cancelButtonText| text of cancelButton |string| default:'取消' |
