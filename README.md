@@ -17,7 +17,7 @@ Android Demo Screenshot: [click to view](https://raw.githubusercontent.com/xiaoc
 
 # Install
 
-#### lastest version: 1.0.3
+#### lastest version: 1.0.4
 
 ```shell
 npm install --save react-native-dynamic-picker

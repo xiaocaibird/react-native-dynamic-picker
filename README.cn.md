@@ -1,4 +1,7 @@
 ### react-native-dynamic-picker 
+
+[click to view English Document](https://github.com/xiaocaibird/react-native-dynamic-picker/blob/master/README.md "English Document")
+
 ------------
 # Introduction
 基于 **react-native** 原生组件 **Picker** 。支持多级联动，如 **“省-市-区”** 三级联动。
@@ -12,7 +15,7 @@ Android效果图(Android Demo Screenshot): [点击查看(click)](https://raw.git
 
 # Install
 
-#### lastest version: 1.0.3
+#### lastest version: 1.0.4
 
 ```shell
 npm install --save react-native-dynamic-picker
