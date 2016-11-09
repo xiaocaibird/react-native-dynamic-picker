@@ -15,7 +15,7 @@ Android效果图(Android Demo Screenshot): [点击查看(click)](https://raw.git
 
 # Install
 
-#### lastest version: 1.0.1
+#### lastest version: 1.0.2
 
 ```shell
 npm install --save react-native-dynamic-picker
@@ -26,7 +26,7 @@ npm install --save react-native-dynamic-picker
 
 ```javascript
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Picker, DateTimePicker } from 'react-native-dynamic-picker';
 
 export default class Example extends React.Component {
