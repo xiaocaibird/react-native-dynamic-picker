@@ -7,9 +7,9 @@
 
 # Introduction
 Based on **Picker** of **react-native**.Support multi-level linkage，like **Province-City-District**.
-The package includes **DateTimePicker** Component，the Component Extended from **react-native-dynamic-picker**，it can be used to pick “year-month-day-hour-minute-second”.
+The package includes **DateTimePicker** Component，the Component Extended from **react-native-dynamic-picker**，it can be used to pick “year-month-day-hour-minute-second”.
 
-note：the **Picker** represents **react-native-dynamic-picker** in the following,unless otherwise stated.
+note：the **Picker** represents **react-native-dynamic-picker** in the following,unless otherwise stated.
 
 IOS Demo Screenshot: [click to view](https://raw.githubusercontent.com/xiaocaibird/react-native-dynamic-picker/master/readme/img/ios.png "click to view")
 
@@ -190,8 +190,8 @@ const styles = StyleSheet.create({
 | branchTitleStyle  |  style of **branchTitles** | TextStyle List or TextStyle  |  Incoming **List** to control every branchTitle,or incoming one **TextStyle** to control all branchTitles |
 |branchPickersStyles | style of react-native's Picker | ViewStyle List or ViewStyle | Incoming **List** to control every react-native's Picker,or incoming one **ViewStyle** to control all react-native's Pickers.See details from **react-native document** |
 |branchPickersItemStyles(only IOS) | style of react-native's Picker.Item |TextStyle List or TextStyle| | only IOS|
-|  topInfoStyle | style of **top prompt**| TextStyle |   |
-|  topInfoCreateFun |  a function to create **top prompt** |function|  |  when selected item has changed,the funciotn will be called. The funciotn can get a parameter, **selectItems**，it's the all of selected items now.The funciotn must return a string.like：**Now Date:2011-1-1**. |
+|  topInfoStyle | style of **top prompt**| TextStyle |   |
+|  topInfoCreateFun |  a function to create **top prompt** |function|  |  when selected item has changed,the funciotn will be called. The funciotn can get a parameter, **selectItems**，it's the all of selected items now.The funciotn must return a string.like：**Now Date:2011-1-1**. |
 | buttonStyle | style of bottom's button | TextStyle | |
 | okButtonText | text of okButton |string| default:'确定' |
 |cancelButtonText| text of cancelButton |string| default:'取消' |
@@ -199,7 +199,7 @@ const styles = StyleSheet.create({
 |cancelCallBack|cancelCallBack|function| tow Parameters: **selectValues** and **selectItems** |
 |colunmMax| max colunm of one row  |number| default:3. max react-native's Picker of one row   |
 | defaultSelectValues| defaultSelectValues | string List||
-|defaultValueButtonShow| show 'DefaultValue' button |boolean| if you set the **getDefaultSelectValuesFun**,when you tap 'DefaultValue' button,there will call **getDefaultSelectValuesFun** and the selected items will change to the **return values**,else,the selected items will change to **defaultSelectValues** |
+|defaultValueButtonShow| show 'DefaultValue' button |boolean| if you set the **getDefaultSelectValuesFun**,when you tap 'DefaultValue' button,there will call **getDefaultSelectValuesFun** and the selected items will change to the **return values**,else,the selected items will change to **defaultSelectValues** |
 |defaultValueButtonText| text of 'DefaultValue' button|string | default:'默认值' |
 |getDefaultSelectValuesFun| callback funciotn of DefaultValue button |function | the **getDefaultSelectValuesFun** must return a **Values List** |
 |pressMaskLayerToHide| press MaskLayer to hide Picker| boolean | default:false |
