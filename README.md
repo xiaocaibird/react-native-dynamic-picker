@@ -202,7 +202,7 @@ const styles = StyleSheet.create({
 |defaultValueButtonText| text of 'DefaultValue' button|string | default:'默认值' |
 |getDefaultSelectValuesFun| callback function of DefaultValue button |function | the **getDefaultSelectValuesFun** must return a **Values List** |
 |pressMaskLayerToHide| press MaskLayer to hide Picker| boolean | default:false |
-|getChildrenFuns| a **function List** to dynamic get children |function List | This is a **function List** ,like [fun,fun,fun...].When a selected item has changed,there will call one of the **getChildrenFuns** to get children.One column bind one of the **getChildrenFuns**.Every function will get tow parameters,**selectItems** and **columnIndex**.And all of them must return a **item List**.when the **'item.mustGetNewChildrenEveryTime'** is true,there will always call **getChildrenFun** every times.When the **'item.mustGetNewChildrenEveryTime'** is false,there will call **getChildrenFun** only when **'item.children'** is undefined or null  |
+|getChildrenFuns| a **function List** to dynamic get children |function List | This is a **function List** ,like [fun,fun,fun...].When a selected item has changed,there will call one of the **getChildrenFuns** to get children.One column bind one of the **getChildrenFuns**.Every function will get two parameters,**selectItems** and **columnIndex**.And all of them must return a **item List**.when the **'item.mustGetNewChildrenEveryTime'** is true,there will always call **getChildrenFun** every times.When the **'item.mustGetNewChildrenEveryTime'** is false,there will call **getChildrenFun** only when **'item.children'** is undefined or null  |
 
 
 # DateTimePicker  Parameters
