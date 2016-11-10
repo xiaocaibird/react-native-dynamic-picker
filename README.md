@@ -13,7 +13,7 @@ note：the **Picker** represents **react-native-dynamic-picker** in the followin
 
 IOS Demo Screenshot: [click to view](https://raw.githubusercontent.com/xiaocaibird/react-native-dynamic-picker/master/readme/img/ios.png "click to view")
 
-Android Demo Screenshot: [click to view](https://raw.githubusercontent.com/xiaocaibird/react-native-dynamic-picker/master/readme/img/android1.jpeg "click to view")  [click to view](https://raw.githubusercontent.com/xiaocaibird/react-native-dynamic-picker/master/readme/img/android2.jpeg "click to view")
+Android Demo Screenshot: [click to view](https://raw.githubusercontent.com/xiaocaibird/react-native-dynamic-picker/master/readme/img/android1.jpeg "click to view")			[click to view](https://raw.githubusercontent.com/xiaocaibird/react-native-dynamic-picker/master/readme/img/android2.jpeg "click to view")
 
 # Install
 
@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
 
 #### how to use DateTimePicker
 
-    The package includes **DateTimePicker** Component，the Component Extended from **react-native-dynamic-picker**.
+    The package includes 'DateTimePicker' Component，the Component Extended from 'react-native-dynamic-picker'.
     It can be used to pick “year-month-day-hour-minute-second”.
     Set the 'type' to change the mode of DateTimePicker. 
     
@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
 |  branchTitles | every column's title  | string List  | like ['Country', 'City', 'District']  |
 | branchTitleStyle  |  style of **branchTitles** | TextStyle List or TextStyle  |  Incoming **List** to control every branchTitle,or incoming one **TextStyle** to control all branchTitles |
 |branchPickersStyles | style of react-native's Picker | ViewStyle List or ViewStyle | Incoming **List** to control every react-native's Picker,or incoming one **ViewStyle** to control all react-native's Pickers.See details from **react-native document** |
-|branchPickersItemStyles(only IOS) | style of react-native's **'Picker.Item'** |TextStyle List or TextStyle| | only IOS|
+|branchPickersItemStyles(only IOS) | style of react-native's **'Picker.Item'** |TextStyle List or TextStyle|  only IOS|
 |  topInfoStyle | style of **top prompt**| TextStyle |   |
 |  topInfoCreateFun |  a function to create **top prompt** |function|  when selected item has changed,the function will be called. The function can get a parameter, **selectItems**，it's the all of selected items now.The function must return a string like：**Now Date:2011-1-1**. |
 | buttonStyle | style of bottom's button | TextStyle | |
@@ -202,7 +202,7 @@ const styles = StyleSheet.create({
 |defaultValueButtonText| text of 'DefaultValue' button|string | default:'默认值' |
 |getDefaultSelectValuesFun| callback function of DefaultValue button |function | the **getDefaultSelectValuesFun** must return a **Values List** |
 |pressMaskLayerToHide| press MaskLayer to hide Picker| boolean | default:false |
-|getChildrenFuns| a **function List** to dynamic get children |function List | This is a **function List** ,like [fun,fun,fun...].When a selected item has changed,there will call one of the **functions** to get children.One column bind one function.Any function must return a **item List**.when the **'item.mustGetNewChildrenEveryTime'** is true,there will always call **getChildrenFun** every times.When the **'item.mustGetNewChildrenEveryTime'** is false,there will call **getChildrenFun** only when **'item.children'** is undefined or null  |
+|getChildrenFuns| a **function List** to dynamic get children |function List | This is a **function List** ,like [fun,fun,fun...].When a selected item has changed,there will call one of the **getChildrenFuns** to get children.One column bind one of the **getChildrenFuns**.Every function will get tow parameters,**selectItems** and **columnIndex**.And all of them must return a **item List**.when the **'item.mustGetNewChildrenEveryTime'** is true,there will always call **getChildrenFun** every times.When the **'item.mustGetNewChildrenEveryTime'** is false,there will call **getChildrenFun** only when **'item.children'** is undefined or null  |
 
 
 # DateTimePicker  Parameters
