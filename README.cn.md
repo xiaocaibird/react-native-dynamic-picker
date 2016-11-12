@@ -18,7 +18,7 @@ Android效果图(Android Demo Screenshot): [点击查看(click)](https://raw.git
 
 # Install
 
-#### lastest version: 1.0.4
+#### lastest version: 1.0.5
 
 ```shell
 npm install --save react-native-dynamic-picker
