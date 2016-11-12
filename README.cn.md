@@ -1,5 +1,7 @@
 ### react-native-dynamic-picker 
 
+**https://www.npmjs.com/package/react-native-dynamic-picker 里的文档(README.md)可能不是最新的，请到 https://github.com/xiaocaibird/react-native-dynamic-picker 查阅**
+
 [click to view English Document](https://github.com/xiaocaibird/react-native-dynamic-picker/blob/master/README.md "English Document")
 
 ------------
@@ -30,12 +32,17 @@ import { StyleSheet, View } from 'react-native';
 import { Picker, DateTimePicker } from 'react-native-dynamic-picker';
 
 export default class Example extends React.Component {
+	componentDidMount(){
+		this.refs['Picker'].showPicker(true);
+		this.refs['DynamicPicker'].showPicker(true);
+		this.refs['DateTimePicker'].showPicker(true);		
+	}
     render() {
         return (
             <View style={styles.container}>
-                <Picker data={this.props.list} title='选择' branchTitles={['选项']} />
-                <Picker isDynamic={true}  data={this.props.areaList} title='选择地区' branchTitles={['省', '市', '区']} />
-                <DateTimePicker title='选择日期' type={DateTimePicker.type.date} />
+                <Picker ref='Picker' data={this.props.list} title='选择' branchTitles={['选项']} />
+                <Picker ref='DynamicPicker' isDynamic={true}  data={this.props.areaList} title='选择地区' branchTitles={['省', '市', '区']} />
+                <DateTimePicker ref='DateTimePicker' title='选择日期' type={DateTimePicker.type.date} />
             </View >
         )
     }
@@ -48,6 +55,13 @@ const styles = StyleSheet.create({
     }
 	})
 ```
+#### Show And Hide
+
+```javascript
+		this.refs['Picker'].showPicker(true);//Show
+		this.refs['Picker'].showPicker(false);//Hide
+```
+
 #### data说明：
 
 ------------
