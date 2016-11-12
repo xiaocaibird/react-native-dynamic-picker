@@ -3,7 +3,8 @@
 
 **I am sorry that my English is not very good.But I will try.**
 
-**The README.md may be out of date in https://www.npmjs.com/package/react-native-dynamic-picker .Please view README.md in https://github.com/xiaocaibird/react-native-dynamic-picker.**
+**The README.md may be out of date in [npmjs.com](https://www.npmjs.com/package/react-native-dynamic-picker "npmjs.com").**
+**Please view README.md in [github]( https://github.com/xiaocaibird/react-native-dynamic-picker "github").**
 
 [点击可查看简体中文版](https://github.com/xiaocaibird/react-native-dynamic-picker/blob/master/README.cn.md "简体中文")
 

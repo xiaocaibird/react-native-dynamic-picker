@@ -1,6 +1,7 @@
 ### react-native-dynamic-picker 
 
-**https://www.npmjs.com/package/react-native-dynamic-picker 里的文档(README.md)可能不是最新的，请到 https://github.com/xiaocaibird/react-native-dynamic-picker 查阅**
+**[npmjs.com](https://www.npmjs.com/package/react-native-dynamic-picker "npmjs.com") 里的文档(README.md)可能不是最新的。**
+**请到 [github]( https://github.com/xiaocaibird/react-native-dynamic-picker "github") 查阅**
 
 [click to view English Document](https://github.com/xiaocaibird/react-native-dynamic-picker/blob/master/README.md "English Document")
 
