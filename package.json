@@ -1,7 +1,7 @@
 {
   "name": "react-native-dynamic-picker",
-  "version": "1.0.5",
-  "description": "dynamic picker",
+  "version": "1.0.6",
+  "description": "dynamic picker,datetime picker",
   "main": "index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,9 @@
   "keywords": [
     "react",
     "react-native",
-    "picker"
+    "picker",
+    "datetime",
+    "date"
   ],
   "author": "CM Zhou",
   "license": "MIT",
@@ -35,6 +37,6 @@
     "index.js",
     "LICENSE",
     "README.md",
-    "README.cn.md"    
+    "README.cn.md"
   ]
 }
